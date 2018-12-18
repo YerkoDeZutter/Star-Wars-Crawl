@@ -9,7 +9,26 @@
 }
 
 #intro-text{
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -35%;
   width: 70%;
   text-align: center;
+  transform: rotatex(40deg);
+  transition: linear 10s;
+  animation: scroll 10s;
+}
+
+@@keyframes scroll {
+
+  0%{
+    font-size: 2vw;
+    top: 100%;
+  }
+
+  100%{
+    font-size: 1vw;
+    top: 0%;
+  }
+
 }
